@@ -1,5 +1,5 @@
-## The following R script is structured into 5 main stages, as described in the Readme files.
-## Refer to the Codebook for any information regarding the data transformations and variables.
+## The following R script is structured into 5 main stages, as described in the README.MD file.
+## Refer to Codebook.MD for any information regarding the data transformations and variables.
 
 ## 1. Merging the training and the test sets to create one individual data set
 
@@ -34,6 +34,8 @@ y_data[,1] = activities[y_data[,1],2]
 
 names(subject_data) <- "subject"
 tidydata <- cbind(subject_data, y_data, x_data)
+
+# Writing the first merged txt file into the working directory
 write.table(tidydata, "tidydata_merged.txt", row.names=FALSE)
 
 ## 5. Creating a second, independent tidy data set with the average of each variable for each activity and each subject 
@@ -56,4 +58,6 @@ for (s in 1:numSubjects) {
     row = row+1
   }
 }
+
+# Writing the second merged txt file (with averages) into the working directory
 write.table(data_results, "tidydata_merged_avg.txt", row.names=FALSE)
