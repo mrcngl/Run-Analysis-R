@@ -19,4 +19,5 @@ The R script created for this assignment is called run_analysis.R and does the f
 1. Download the data source. You'll then have a ```UCI HAR Dataset``` folder.
 2. Place the script ```run_analysis.R``` in the parent folder of ```UCI HAR Dataset```. 
 3. Set ```UCI HAR Dataset``` as your working directory using the ```setwd()``` function in RStudio.
-4. Run ```source("run_analysis.R")```, then it will generate the merged data file ```tidydata_merged_avg.txt``` in your working directory.
+4. Run ```source("run_analysis.R")```, 
+5. The script will then generate the merged data file ```tidydata_merged_avg.txt``` in your working directory.
