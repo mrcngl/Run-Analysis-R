@@ -19,7 +19,7 @@ Data Transformation Steps
 
 The `run_analysis.R` script performs the following data transformations:
 
-1. Merges the training and the test sets to create one data set
+1. Merges the training and the test sets to create one data set (`tidydata_merged.txt`)
     - train/X_train.txt with test/X_test.txt -> the result is a 10299 x 561 data frame
     - train/subject_train.txt with test/subject_test.txt -> the result is a 10299 x 1 data frame with subject IDs
     - train/y_train.txt with test/y_test.txt -> the result is another 10299 x 1 data frame with activity IDs.
@@ -28,7 +28,7 @@ The `run_analysis.R` script performs the following data transformations:
 3. Uses descriptive activity names to name the activities in the data set
 4. Appropriately labels the data set with descriptive variable names
     - All features and activity names are converted to lower case, underscores and brackets are removed
-5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+5. Creates a second, independent tidy data set (`tidydata_merged_avg.txt`) with the average of each variable for each activity and each subject. 
 
 
 Variables and files data descriptions 
@@ -40,9 +40,10 @@ This is a 10299x68 data frame. The first column contains subject IDs, the second
 # `tidydata_merged_avg.txt`
 This is a 180x68 data frame. As in `tidydata_merged.txt`, the first column contains subject IDs and the second column contains the activity names. The avg measurements for each of the 66 attributes are in columns 3:68. There are 30 subjects and 6 activities for a total of 180 rows with measurements.
 
-# Fields
+# Fields and measurements
 * subject: Test subject ID
 * activity: Activity name (see below)
+
 The following fields are inherited by the original data source. Please refer to the source url for additional informations if needed:
 * tbodyacc-mean-x
 * tbodyacc-mean-y
