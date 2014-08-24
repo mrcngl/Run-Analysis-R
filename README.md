@@ -20,4 +20,13 @@ The R script created for this assignment is called run_analysis.R and does the f
 2. Place the script ```run_analysis.R``` in the parent folder of ```UCI HAR Dataset```. 
 3. Set ```UCI HAR Dataset``` as your working directory using the ```setwd()``` function in RStudio.
 4. Run ```source("run_analysis.R")```, 
-5. The script will then generate the merged data file ```tidydata_merged_avg.txt``` in your working directory.
+5. The script will then generate two merged data sets in your working directory:
+  - ```tidydata_merged.txt```
+  - ```tidydata_merged_avg.txt```
+
+The first file merges the test and training data sets into an individual file.
+The second file contains the average values grouped by test subject and activity.
+
+Please refer to CodeBook.md for more information on the contents of the files.
+
+Thanks!
