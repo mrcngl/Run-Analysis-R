@@ -16,7 +16,7 @@ The R script created for this assignment is called run_analysis.R and does the f
 
 ## How to run the script and generate the merged data sets
 
-1. Download the data source. You'll then have a ```UCI HAR Dataset``` folder.
+1. Download the data source and unzip the file. You'll then have a ```UCI HAR Dataset``` folder.
 2. Place the script ```run_analysis.R``` in the parent folder of ```UCI HAR Dataset```. 
 3. Set ```UCI HAR Dataset``` as your working directory using the ```setwd()``` function in RStudio.
 4. Run ```source("run_analysis.R")```, 
