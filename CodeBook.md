@@ -34,13 +34,13 @@ The `run_analysis.R` script performs the following data transformations:
 Variables and files data descriptions 
 -------------------------------
 
-# `tidydata_merged.txt`
+### `tidydata_merged.txt`
 This is a 10299x68 data frame. The first column contains subject IDs, the second column activity names, and the last 66 columns are measurements.
 
-# `tidydata_merged_avg.txt`
+### `tidydata_merged_avg.txt`
 This is a 180x68 data frame. As in `tidydata_merged.txt`, the first column contains subject IDs and the second column contains the activity names. The avg measurements for each of the 66 attributes are in columns 3:68. There are 30 subjects and 6 activities for a total of 180 rows with measurements.
 
-# Fields and measurements
+## Fields and measurements
 * subject: Test subject ID
 * activity: Activity name (see below)
 
@@ -112,7 +112,7 @@ The following fields are inherited by the original data source. Please refer to 
 * fbodybodygyrojerkmag-mean
 * fbodybodygyrojerkmag-std
 
-#Activities
+##Activities
 
 1. Walking
 2. Walking upstairs
